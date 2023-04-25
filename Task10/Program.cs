@@ -6,6 +6,7 @@
 
 Console.WriteLine("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
+
 int second1 = number % 100;
 int second2 = second1 / 10;
 Console.WriteLine($"{number} -> {second2}");
