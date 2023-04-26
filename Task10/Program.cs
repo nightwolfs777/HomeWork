@@ -7,6 +7,13 @@
 Console.WriteLine("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int second1 = number % 100;
-int second2 = second1 / 10;
-Console.WriteLine($"{number} -> {second2}");
+if (number < 100 || number > 999)
+{
+    Console.WriteLine("Вы ввели не правильное число");
+    return;
+}
+
+int secondRank = number / 10 % 10;
+Console.WriteLine($"{number} -> {secondRank}");
+
+
