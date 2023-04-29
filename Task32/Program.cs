@@ -38,3 +38,4 @@ InverseArray(array);
 Console.Write(" -> [");
 PrintArray(array);
 Console.Write("]");
+
