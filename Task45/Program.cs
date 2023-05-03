@@ -32,11 +32,11 @@ int[] CreateCopyArray(int[] arr)
 }
 
 int[] array = CreateArrayRndInt(4, 1, 10);
+int[] createCopyArray = CreateCopyArray(array);
 Console.Write("[");
 PrintArray(array);
 Console.Write("] ");
 Console.Write(" -> ");
-CreateCopyArray(array);
 Console.Write("[");
-PrintArray(array);
+PrintArray(createCopyArray);
 Console.Write("] ");
